@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Added Something</h1>
+    <input id="style-name" type="text" placeholder="style-name">
+    <button id="name-btn">style-name</button>
+    <input id="style-value" type="text" placeholder="style-value">
+    <button id="value-btn">style-value</button>
+    <button id="name-value">Add</button>
+    <script>
+        document.getElementById('name-btn').addEventListener('click',function(){
+            const styleName = document.getElementById('style-name').value;
+            console.log(styleName);
+        })
+        document.getElementById('value-btn').addEventListener('click',function(){
+            const styleValue = document.getElementById('style-value').value;
+            console.log(styleValue);
+        })
+        document.getElementById('name-value').addEventListener('click',function(){
+            const styleName = document.getElementById('style-name').value;
+            const styleValue = document.getElementById('style-value').value;
+            const result = styleName + ' : ' + styleValue;
+            console.log(result)
+        })
+    </script>
+</body>
+</html>
